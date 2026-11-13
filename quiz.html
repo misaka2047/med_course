@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>刷题 · 模块1 神经精神与运动</title>
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>刷题 · 模块1</h1>
+    <div class="sub" id="src">CMExam 题库</div>
+  </div>
+  <div class="tools">
+    <input id="q" type="search" placeholder="搜索题干 / 解析…">
+    <a class="chip-btn" href="index.html">← 返回笔记</a>
+    <button class="chip-btn" id="reset">重置进度</button>
+  </div>
+</header>
+
+<div class="wrap">
+  <aside class="side">
+    <div class="sect">刷题模式</div>
+    <div class="modes" id="modes">
+      <button data-mode="seq" class="on">顺序刷</button>
+      <button data-mode="rand">随机 20 题</button>
+      <button data-mode="wrong">错题重做</button>
+      <button data-mode="undone">未做过的</button>
+    </div>
+
+    <div class="sect">人体系统</div>
+    <ul id="sysList"></ul>
+
+    <div class="sect">难度（数据集自带）</div>
+    <div class="chips" id="diffChips"></div>
+
+    <div class="sect">题型</div>
+    <div class="chips" id="typeChips"></div>
+  </aside>
+
+  <main class="main">
+    <div class="bar">
+      <span>当前题池 <b id="pool">0</b> 题</span>
+      <span>·</span>
+      <span>已答 <b id="done">0</b></span>
+      <span>·</span>
+      <span>正确率 <b id="acc">—</b></span>
+      <span>·</span>
+      <span id="loaded" class="loaded">载入中…</span>
+      <span class="grow">
+        <span class="prog"><i id="progBar"></i></span>
+        <span id="progTxt">0%</span>
+      </span>
+    </div>
+    <article class="card" id="card"></article>
+    <div class="nav">
+      <button id="prev">← 上一题</button>
+      <span id="pos">—</span>
+      <button id="next">下一题 →</button>
+    </div>
+    <div class="kbd"><kbd>A</kbd>–<kbd>E</kbd> 选择 · <kbd>Enter</kbd> 提交/下一题 · <kbd>←</kbd><kbd>→</kbd> 翻页</div>
+  </main>
+</div>
+
+<script src="quiz-data.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>

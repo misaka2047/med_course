@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>模块1 · 复习笔记</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>模块1 · 神经、精神与运动-1</h1>
+    <div class="sub" id="meta"></div>
+  </div>
+  <div class="tools">
+    <input id="q" type="search" placeholder="搜索知识点 / 关键词…" autocomplete="off">
+    <a class="chip-btn" href="quiz.html" title="CMExam 题库 · 按人体系统归类">刷题 →</a>
+    <button id="onlyHot" class="chip-btn" type="button">只看高频</button>
+    <button id="resetProg" class="chip-btn" type="button">清空进度</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="side">
+    <div class="side-head">目录</div>
+    <nav id="tree"></nav>
+    <div class="side-foot">
+      <div class="prog"><span id="progText">0 / 0 已复习</span>
+        <div class="bar"><i id="progBar"></i></div>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main" class="content">
+    <div class="empty">从左侧选择一个知识点；或直接搜索。</div>
+  </main>
+</div>
+
+<div id="lightbox" class="lightbox" hidden><img alt=""><div class="lb-cap"></div></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
